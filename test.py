@@ -22,12 +22,11 @@ def get_args():
 def test(opt):
     if torch.cuda.is_available():
         torch.cuda.manual_seed(123)
-    else:
-        torch.manual_seed(123)
-    if torch.cuda.is_available():
         model = torch.load("{}/flappy_bird".format(opt.saved_path))
     else:
+        torch.manual_seed(123)
         model = torch.load("{}/flappy_bird".format(opt.saved_path), map_location=lambda storage, loc: storage)
+
     model.eval()
     game_state = FlappyBird()
     image, reward, terminal = game_state.next_frame(0)
