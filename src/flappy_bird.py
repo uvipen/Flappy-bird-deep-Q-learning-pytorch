@@ -154,3 +154,6 @@ class FlappyBird(object):
         display.update()
         self.fps_clock.tick(self.fps)
         return image, reward, terminal
+
+
+__all__ = ["FlappyBird"]

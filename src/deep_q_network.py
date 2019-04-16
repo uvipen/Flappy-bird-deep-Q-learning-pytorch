@@ -30,3 +30,6 @@ class DeepQNetwork(nn.Module):
         output = self.fc2(output)
 
         return output
+
+
+__all__ = ["DeepQNetwork"]
