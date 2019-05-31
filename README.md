@@ -1,4 +1,4 @@
-# [PYTHON] Deep Q-learning for playing Flappy Bird
+# [PYTORCH] Deep Q-learning for playing Flappy Bird
 
 ## Introduction
 
