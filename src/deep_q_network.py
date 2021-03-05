@@ -18,7 +18,7 @@ class DeepQNetwork(nn.Module):
     def _create_weights(self):
         for m in self.modules():
             if isinstance(m, nn.Conv2d) or isinstance(m, nn.Linear):
-                nn.init.uniform(m.weight, -0.01, 0.01)
+                nn.init.uniform_(m.weight, -0.01, 0.01)
                 nn.init.constant_(m.bias, 0)
 
     def forward(self, input):
