@@ -71,7 +71,7 @@ def train(opt):
             action = randint(0, 1)
         else:
 
-            action = torch.argmax(prediction)[0]
+            action = torch.argmax(prediction)
 
         next_image, reward, terminal = game_state.next_frame(action)
         next_image = pre_processing(next_image[:game_state.screen_width, :int(game_state.base_y)], opt.image_size,
