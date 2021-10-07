@@ -25,3 +25,4 @@ You could find my trained model at **trained_models/flappy_bird**
 * **cv2**
 * **pytorch** 
 * **numpy**
+* **tensorboardX**
